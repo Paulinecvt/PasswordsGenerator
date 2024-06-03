@@ -30,6 +30,7 @@ def generate_password(length=12, use_Digits=True, use_Specials=True, use_Upperca
 
     # Generate the password
     password = "".join(random.choice(charset) for i in range(length))
+    return password
 
 # Test the function
 if __name__ == "__main__":
